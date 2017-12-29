@@ -1,0 +1,42 @@
+.modal-content .close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 3%;
+    font-size: 0;
+    font-family: var(--main-font-light);
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--font-color-white);
+    cursor: pointer;
+}
+
+.modal-content .close-btn::before,
+.modal-content .close-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 3px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-content .close-btn::before {
+    transform: rotate(-45deg);
+}
+
+.modal-content .close-btn::after {
+    transform: rotate(45deg);
+}
+
+.modal-content .close-btn:hover::before,
+.modal-content .close-btn:hover::after {
+    box-shadow: 0 0 12px 0 white;
+}
+
+
+

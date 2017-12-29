@@ -1,0 +1,71 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: var(--footer-font-size);
+    background-color: var(--footer-bgr-color);
+    color: var(--footer-font-color);
+    text-transform: none;
+}
+
+.rsschool-link {
+    color: var(--footer-font-color);
+    text-decoration: none;
+}
+
+.rsschool-link:hover,
+.developer-link:hover {
+    text-decoration: underline;
+}
+
+.rsschool-link:active,
+.developer-link:active {
+    color: var(--footer-active-color);
+    text-decoration: none;
+}
+
+.notification,
+.school,
+.github-link {
+    margin: 0;
+}
+
+.notification {
+    padding: 20px 20px 10px;
+}
+
+.school {
+    padding: 0 20px 20px;
+}
+
+.github-link {
+    padding: 20px 45px;
+}
+
+.developer-link {
+    position: relative;
+    font-size: 0;
+    color: var(--font-color-white);
+    text-decoration: none;
+}
+
+.developer-link::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -11px;
+    width: 30px;
+    height: 30px;
+    background: var(--sprite);
+    background-position:  -537px -169px;
+}
+
+.developer-link:hover::before {
+    background-position:  -537px -125px;
+}
+
+.developer-link:active::before {
+    background-position:  -537px -169px;
+}
+

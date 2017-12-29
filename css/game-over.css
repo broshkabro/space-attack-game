@@ -1,0 +1,46 @@
+.background .game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--main-bgr-width);
+    height: var(--main-bgr-height);
+    font-size: 26px;
+    color: white;
+    background-color: var(--popup-dark-bgr);
+    z-index: 100;
+}
+
+.game-over .game-over-header {
+    margin: 0;
+}
+
+.game-over .game-restart {
+    margin: 0;
+    font-family: var(--main-font-light);
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+.game-over .restart-btn {
+    display: inline-block;
+    padding: 5px;
+    font-family: var(--main-font-bold);
+    border: 1px solid black;
+    border-radius: 5px;
+    background: var(--bgr-restart-btn);
+}
+
+.game-over .restart-btn:hover {
+     background: linear-gradient(to bottom, rgba(47,71,102,1) 0%,rgba(112,161,201,1) 49%,
+     rgba(112,161,201,1) 51%,rgba(47,71,102,1) 100%);
+}
+
+.game-over .restart-btn:active {
+    background: var(--bgr-restart-btn);
+}

@@ -1,0 +1,39 @@
+:root {
+    --main-font-bold: "LatoLatin-Bold", Arial, sans-serif;
+    --main-font-light: "LatoLatin-Light", Arial, sans-serif;
+    --h1-font: "STARWARS", Arial, sans-serif;
+
+    --font-color-dark-blue: #10223f;
+    --font-color-white: white;
+    --rules-font-color: #ffdf9d;
+    --footer-font-color: white;
+    --footer-active-color: rgb(141,141,141);
+    --main-font-size: 22px;
+    --h1-font-size: 72px;
+    --h2-font-size: 30px;
+    --start-btn-font: 16px;
+    --footer-font-size: 14px;
+
+    --main-bgr-width: 800px;
+    --main-bgr-height: 600px;
+
+    --rules-margin-top: 64px;
+    --developer-margin: 60px;
+    --rules-padding-bottom: 80px;
+    --btn-padding: 15px;
+    --padding-top-description: 150px;
+    --padding-bottom-description: 55px;
+
+    --bgr-space: url("../img/space.jpg") no-repeat 0 0;
+    --sprite: url("../img/sprite-index.png") no-repeat;
+
+    --bgr-restart-btn: linear-gradient(to bottom, rgba(9,49,104,1) 0%,rgba(43,136,217,1) 50%,
+    rgba(32,124,202,1) 51%,rgba(9,49,104,1) 100%);
+    --bgr-start-btn: linear-gradient(to bottom, rgba(249,237,204,1) 0%,rgba(249,213,119,1) 50%,rgba(249,231,184,1) 100%);
+    --bgr-back-btn-hover: linear-gradient(to bottom, rgba(9,49,104,1) 0%,rgba(43,136,217,1) 50%,
+    rgba(32,124,202,1) 51%,rgba(9,49,104,1) 100%);
+    --bgr-start-btn-hover: #F7EFD9;
+    --footer-bgr-color: black;
+    --popup-dark-bgr: rgba(11,30,60,.7);
+    --modal-bgr: rgba(11,30,60,.8);
+}

@@ -1,0 +1,22 @@
+main-navigation {
+    display: flex;
+}
+
+.main-menu-list {
+    display: flex;
+    justify-content: space-around;
+    max-width: 590px;
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+}
+
+.menu-list-item a {
+    color: var(--font-color-white);
+    text-decoration: none;
+}
+
+.menu-list-item:hover {
+    font-family: var(--main-font-bold);
+}
+

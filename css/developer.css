@@ -1,0 +1,33 @@
+.developer-info {
+    display: flex;
+    flex-direction: column;
+    margin: var(--developer-margin) 0;
+    text-align: center;
+}
+
+.developer-info .info {
+    text-transform: none;
+}
+
+.developer-photo {
+    width: 248px;
+    height: 248px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.developer-name {
+    margin-bottom: 0;
+    font-family: var(--main-font-bold);
+    font-size: 24px;
+}
+
+.developer-about {
+    margin: 0;
+    font-size: 20px;
+}
+
+.developer-quote {
+    font-size: 20px;
+    font-style: italic;
+}

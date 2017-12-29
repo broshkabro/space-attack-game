@@ -1,0 +1,15 @@
+@keyframes scroll {
+    100% {
+        background-position: 0 2500px;
+    }
+}
+
+.background {
+    position: relative;
+    align-self: center;
+    width: var(--main-bgr-width);
+    height: var(--main-bgr-height);
+    background: url('../img/space.jpg') repeat-y 0 0;
+    animation: scroll 50s infinite linear;
+    z-index: 1;
+}

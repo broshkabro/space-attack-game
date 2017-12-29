@@ -1,0 +1,17 @@
+.game-name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-name .alien-spaceship {
+    width: 408px;
+    height: 159px;
+}
+
+.game-name .main-caption {
+    max-width: 330px;
+    font-family: var(--h1-font);
+    font-size: var(--h1-font-size);
+    text-align: center;
+}

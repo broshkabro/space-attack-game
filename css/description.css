@@ -1,0 +1,73 @@
+.description {
+    display: flex;
+    justify-content: space-around;
+    padding-top: var(--padding-top-description);
+    padding-bottom: var(--padding-bottom-description);
+}
+
+.description-section p {
+    text-align: center;
+    line-height: 28px;
+    text-transform: none;
+}
+
+.description-section {
+    flex-basis: 295px;
+}
+
+.description-section .goal,
+.description-section .survive {
+    font-family: var(--main-font-bold);
+}
+
+.game-screenshots {
+    display: flex;
+}
+
+.flex-screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-screen {
+    padding-right: 15px;
+    background: url(../img/sprite-index.png) no-repeat -584px -39px;
+}
+
+.screenshot {
+    position: relative;
+    cursor: pointer;
+}
+
+.screenshot:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 195px;
+    height: 145px;
+    background:  var(--popup-dark-bgr);
+    z-index: 100;
+}
+
+.screenshot:hover::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    width: 34px;
+    height: 35px;
+    background: var(--sprite);
+    background-position: -535px -216px;
+    z-index: 100;
+}
+
+.main-screen:hover:before {
+    width: 407px;
+    height: 304px;
+    z-index: 100;
+}
+

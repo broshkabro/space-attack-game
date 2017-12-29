@@ -1,0 +1,31 @@
+body {
+    font-family: var(--main-font-light);
+    font-size: var(--main-font-size);
+    text-transform: uppercase;
+    color: var(--font-color-dark-blue);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h2 {
+    font-family: var(--main-font-bold);
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}

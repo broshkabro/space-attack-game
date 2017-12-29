@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Game</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/game-style.css">
+    </head>
+    <body class="wrapper">
+        <header class="main-header">
+          <section class="instruction">
+              <p>Use <span class="key">arrows</span> to move the spaceship</p>
+              <p>Use <span class="key">space</span> to destroy your enemies</p>
+          </section>
+        </header>
+
+
+
+        <main class="main-content">
+            <div class="background">
+                <canvas id="game-area"></canvas>
+                <section class="score">
+                    <span>Score: <span id="score-js">0</span>
+                    </span>
+                </section>
+                <div id="game-over-js" class="game-over">
+                    <p class="game-over-header">Game over</p>
+                    <p class="final-score">Score: <span id="final-score">0</span>
+                    </p>
+                    <p class="game-restart">Press <span id="restart-js" class="restart-btn">enter</span> to play again</p>
+                </div>
+            </div>
+            <div class="back-to-index">
+                <a class="index-link" href="index.html">Back</a>
+            </div>
+        </main>
+        <script src="js/game-config.js"></script>
+        <script src="js/game-classes.js"></script>
+        <script src="js/game.js"></script>
+    </body>
+</html>

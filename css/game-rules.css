@@ -1,0 +1,104 @@
+.game-rules {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: var(--rules-margin-top);
+    padding-bottom: var(--rules-padding-bottom);
+    background: var(--bgr-space);
+    background-size: cover;
+    color: var(--rules-font-color);
+}
+
+.enemy-ship {
+    font-size: 0;
+}
+
+.enemy-ship {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 15%;
+    width: 186px;
+    height: 180px;
+    background: var(--sprite);
+    background-position: -200px 0;
+}
+
+.game-rules .rules {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 50px 0;
+}
+
+.game-rules .rule {
+    position: relative;
+    padding: 0 15px;
+    font-family: var(--main-font-bold);
+    text-transform: none;
+    text-align: center;
+}
+
+.game-rules .rule::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 25%;
+    background: var(--sprite);
+}
+
+.game-rules .rule-enemies::before {
+    left: 30%;
+    width: 148px;
+    height: 165px;
+    background-position: -153px -192px;
+}
+
+.game-rules .enemies {
+    padding-top: 165px;
+}
+
+.game-rules .rule-keys::before {
+    width: 160px;
+    height: 102px;
+    background-position: -411px -8px;
+ }
+
+.game-rules .arrows {
+    padding-top: 102px;
+}
+
+.game-rules .rule-space::before {
+    width: 143px;
+    height: 165px;
+    background-position: -320px -192px;
+}
+
+.game-rules .space-key {
+    padding-top: 165px;
+}
+
+.start-game {
+    align-self: center;
+    display: inline-block;
+    padding: var(--btn-padding);
+    background: var(--bgr-start-btn);
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--main-font-bold);
+    font-size: var(--start-btn-font);
+    color: var(--font-color-dark-blue);
+}
+
+.start-game:hover {
+    background: var(--bgr-start-btn-hover);
+}
+
+.start-game:active {
+    background: var(--bgr-start-btn);
+}
+
+
+
+

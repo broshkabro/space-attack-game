@@ -1,0 +1,18 @@
+canvas {
+    background-color: transparent;
+}
+
+#game-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.background .score {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-family: var(--main-font-light);
+    color: white;
+}

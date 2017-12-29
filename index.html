@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Space Attack</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style-index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <header class="main-header">
+                    <nav class="main-navigation">
+                        <ul class="main-menu-list">
+                            <li class="menu-list-item"><a href="#descr">Description</a></li>
+                            <li class="menu-list-item"><a href="#rules">How to play</a></li>
+                            <li class="menu-list-item"><a href="#developer">Developer</a></li>
+                        </ul>
+                    </nav>
+
+                    <section class="game-name">
+                        <img class="alien-spaceship" src="img/spaceship-header.png" alt="Alien Spaceship">
+                        <h1 class="main-caption">Space Attack</h1>
+                    </section>
+                    <span class="spaceship">spaceship</span>
+                    <img class="header-diagonal" src="img/header-diagonal.png" alt="Header separator">
+                </header>
+
+
+
+                <main class="main-content">
+                    <div id="descr" class="description">
+                        <section class="description-section">
+                            <h2 class="description-caption">Description</h2>
+                            <p>Creepy aliens want to conquer our galaxy again (no wonder).</p>
+                            <p><span class="goal">Your goal</span> is to kick their metallic ass*s and to <span class="survive">survive</span>.</p>
+                        </section>
+                        <div id="screenshots" class="game-screenshots">
+                            <div class="screenshot main-screen" >
+                                <img src="img/main-screenshot.jpg" alt="Screenshot">
+                            </div>
+                            <div class="flex-screenshots">
+                                <div class="screenshot shooting-screen">
+                                    <img src="img/shooting-screenshot.jpg" alt="Screenshot">
+                                </div>
+                                <div class="screenshot aliens-screen">
+                                    <img src="img/aliens-screenshot.jpg" alt="Screenshot">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-screenshots" class="modal">
+                            <div class="modal-content">
+                                <button class="close-btn" type="button">Close</button>
+                                <div class="slide main-slide visually-hidden">
+                                    <img src="img/main-screenshot-large.jpg" alt="Screenshot">
+                                </div>
+                                <div class="slide shoot-slide visually-hidden">
+                                    <img src="img/shooting-screenshot-large.jpg" alt="Screenshot">
+                                </div>
+                                <div class="slide aliens-slide visually-hidden">
+                                    <img src="img/aliens-screenshot-large.jpg" alt="Screenshot">
+                                </div>
+                            </div>
+                            <div class="img-prev">
+                                <div class="column">
+                                    <img class="main-demo" src="img/main-small.jpg" alt="Screenshot">
+                                </div>
+                                <div class="column">
+                                    <img class="shoot-demo" src="img/shooting-screenshot.jpg" alt="Screenshot">
+                                </div>
+                                <div class="column">
+                                    <img class="aliens-demo" src="img/aliens-screenshot.jpg" alt="Screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="rules" class="game-rules">
+                        <img class="rules-diagonal" src="img/rules-diagonal.png" alt="Separator">
+                        <span class="enemy-ship">enemy</span>
+                        <h2>How to play</h2>
+                        <div class="rules">
+                            <section class="rule rule-enemies">
+                                <p class="img-caption enemies">avoid bullets and spaceships of your enemies</p>
+                            </section>
+                            <section class="rule rule-keys">
+                                <p class="img-caption arrows">use arrows to move the spaceship</p>
+                            </section>
+                            <section class="rule rule-space">
+                                <p class="img-caption space-key">press space to kill your enemies</p>
+                            </section>
+                        </div>
+                        <a class="start-game" href="game.html">Got it! Let’s play!</a>
+                    </div>
+
+                    <div id="developer" class="developer-info">
+                        <h2 class="developer-caption">Developer</h2>
+                        <img class="developer-photo" src="img/developer.jpg" alt="Developer photo">
+                        <p class="developer-name info">Maria Brodnikova</p>
+                        <p class="developer-about info">a newborn front-end developer</p>
+                        <p class="developer-quote info">"This line is reserved for a very smart quote no one understands"</p>
+                    </div>
+                </main>
+            </div>
+            <div class="footer">
+                <footer class="main-footer">
+                    <div>
+                        <p class="notification">for non-commercial use</p>
+                        <p class="school">done for <a class="rsschool-link" href="https://school.rollingscopes.com/">The Rolling Scopes School</a> in 2017</p>
+                    </div>
+                    <p class="github-link">follow me<span><a class="developer-link" href="https://github.com/broshkabro">GitHub</a></span></p>
+                </footer>
+            </div>
+        </div>
+        <script src="js/img-gallery.js"></script>
+    </body>
+</html>
