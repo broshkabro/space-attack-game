@@ -1,5 +1,5 @@
 const game = {
-    display: "",
+    display: '',
     displayWidth: 800,
     displayHeight: 600,
     enemies: [],
@@ -7,7 +7,6 @@ const game = {
     enemyBullets: [],
     ufo: [],
 
-    input: "",
     spaceKey: 32,
     leftArrow: 37,
     rightArrow: 39,
@@ -15,14 +14,14 @@ const game = {
     upArrow: 38,
     enter: 13,
 
-    spriteImg: "",
-    bulletSprite: "",
-    enemySprite: "",
-    bulletEnemySprite: "",
-    explosionSprite: "",
-    spaceShip: "",
-    shipSprite: "",
-    ufoSprite: "",
+    spriteImg: '',
+    bulletSprite: '',
+    enemySprite: '',
+    bulletEnemySprite: '',
+    explosionSprite: '',
+    spaceShip: '',
+    shipSprite: '',
+    ufoSprite: '',
     ufoY: -35,
     ufoNum: 350,
 

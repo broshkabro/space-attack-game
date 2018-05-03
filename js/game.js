@@ -1,7 +1,6 @@
 (function() {
   function main() {
       game.display = new Display('game-area', game.displayWidth, game.displayHeight);
-      game.input = new InputGallery();
 
       game.spriteImg = new Image();
       game.spriteImg.addEventListener('load', function() {
@@ -13,7 +12,7 @@
           init();
           run();
       });
-      game.spriteImg.src = "img/sprite.png";
+      game.spriteImg.src = 'img/sprite.png';
   }
 
   function init() {
@@ -58,22 +57,27 @@
   }
 
   function gameControl() {
-      if(game.input.isDown(game.leftArrow)) {
-          game.spaceShip.x -= 5;
-      }
-      if(game.input.isDown(game.upArrow)) {
-          game.spaceShip.y -= 5;
-      }
-      if(game.input.isDown(game.rightArrow)) {
-          game.spaceShip.x += 5;
-      }
-      if(game.input.isDown(game.downArrow)) {
-          game.spaceShip.y += 5;
-      }
-      if(game.input.isPressed(game.spaceKey)) {
-          game.bullets.push(new Bullet(game.bulletSprite, game.spaceShip.x + 10, game.spaceShip.y, -8));
-          game.bullets.push(new Bullet(game.bulletSprite, game.spaceShip.x + 40, game.spaceShip.y, -8));
-      }
+      document.onkeydown = event => {
+          switch(event.keyCode) {
+              case game.leftArrow:
+                  game.spaceShip.x -= 10;
+                  break;
+              case game.upArrow:
+                  game.spaceShip.y -= 10;
+                  break;
+              case game.rightArrow:
+                  game.spaceShip.x += 10;
+                  break;
+              case game.downArrow:
+                  game.spaceShip.y += 10;
+                  break;
+              case game.spaceKey:
+                  game.bullets.push(new Bullet(game.bulletSprite, game.spaceShip.x + 10, game.spaceShip.y, -8));
+                  game.bullets.push(new Bullet(game.bulletSprite, game.spaceShip.x + 40, game.spaceShip.y, -8));
+                  break;
+          }
+      };
+
       game.spaceShip.x = Math.max(Math.min(game.spaceShip.x, game.display.width - (25 + game.shipSprite.w)), 15);
       game.spaceShip.y = Math.max(Math.min(game.spaceShip.y, game.display.height - (10 + game.shipSprite.h)), 450)
   }
@@ -162,7 +166,7 @@
   }
 
   function updateScore() {
-     return document.getElementById("score-js").innerHTML = game.score;
+     return document.getElementById('score-js').innerHTML = game.score;
   }
 
   function animateEnemies() {
@@ -213,17 +217,17 @@
       game.gameOn = false;
       game.enemies = [];
       game.ufo = [];
-      game.shipSprite = "";
-      document.getElementById("game-over-js").style.display = "flex";
-      document.getElementById("final-score").innerHTML = game.score;
+      game.shipSprite = '';
+      document.getElementById('game-over-js').style.display = 'flex';
+      document.getElementById('final-score').innerHTML = game.score;
       restart();
   }
 
   function restart() {
-      document.addEventListener("keydown", resetParams);
+      document.addEventListener('keydown', resetParams);
       function resetParams(event) {
           if(event.keyCode === game.enter) {
-              document.getElementById("game-over-js").style.display = "none";
+              document.getElementById('game-over-js').style.display = 'none';
               location.reload();
               main();
           }

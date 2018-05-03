@@ -48,32 +48,3 @@ class UFO {
     }
 }
 
-class InputGallery {
-    constructor() {
-        this.down = {};
-        this.pressed = {};
-
-        let thisClass = this;
-        document.addEventListener("keydown", function(event) {
-            thisClass.down[event.keyCode] = true;
-        });
-        document.addEventListener("keyup", function(event) {
-            delete thisClass.down[event.keyCode];
-            delete thisClass.pressed[event.keyCode];
-        });
-    }
-    isDown(code) {
-        return this.down[code];
-    }
-    isPressed(code) {
-        if (this.pressed[code]) {
-            return false;
-        }
-        else if (this.down[code]) {
-            return this.pressed[code] = true;
-        }
-        return false;
-    }
-}
-
-
